@@ -1,0 +1,15 @@
+version: '3'
+services:
+  producer:
+    build:
+      context: ./producer
+    ports:
+      - "3000:3000"
+    depends_on:
+      - consumer
+
+  consumer:
+    build:
+      context: ./consumer
+    ports:
+      - "4000:4000"
