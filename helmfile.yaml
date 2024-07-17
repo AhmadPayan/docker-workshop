@@ -1,0 +1,16 @@
+repositories:
+  - name: stable
+    url: https://charts.helm.sh/stable
+
+releases:
+  - name: producer
+    namespace: default
+    chart: ./k8s/helm/producer
+    values:
+      - ./k8s/helm/producer/values.yaml
+
+  - name: consumer
+    namespace: default
+    chart: ./k8s/helm/consumer
+    values:
+      - ./k8s/helm/consumer/values.yaml

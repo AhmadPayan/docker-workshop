@@ -1,0 +1,8 @@
+image:
+  repository: producer
+  tag: local
+
+service:
+  port: 3000
+
+replicaCount: 1

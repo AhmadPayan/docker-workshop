@@ -1,0 +1,8 @@
+image:
+  repository: consumer
+  tag: local
+
+service:
+  port: 4000
+
+replicaCount: 1

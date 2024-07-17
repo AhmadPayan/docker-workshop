@@ -1,3 +1,3 @@
 export function receiveMessage(): string {
-    return 'Hello from the consumer!';
+    return 'Hello from the consumer! ([V2])';
   }
